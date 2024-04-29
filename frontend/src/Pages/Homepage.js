@@ -23,38 +23,46 @@ function Homepage() {
   }, [history]);
 
   return (
-    <Container maxW="xl" centerContent>
-      <Box
-        d="flex"
-        justifyContent="center"
-        p={3}
-        bg="white"
-        w="100%"
-        m="40px 0 15px 0"
-        borderRadius="lg"
-        borderWidth="1px"
-      >
-        <Text fontSize="4xl" fontFamily="Work sans">
-          Talk-A-Tive
-        </Text>
-      </Box>
-      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
-        <Tabs isFitted variant="soft-rounded">
-          <TabList mb="1em">
-            <Tab>Login</Tab>
-            <Tab>Sign Up</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              <Login />
-            </TabPanel>
-            <TabPanel>
-              <Signup />
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-      </Box>
-    </Container>
+    <>
+      <Container maxW="xl" centerContent>
+        <div className="">
+          <h1 className="text-3xl text-center font-bold">Navbar</h1>
+          <div>
+            <img src="" alt="" />
+          </div>
+        </div>
+        <Box
+          d="flex"
+          justifyContent="center"
+          p={3}
+          bg="white"
+          w="100%"
+          m="40px 0 15px 0"
+          borderRadius="lg"
+          borderWidth="1px"
+        >
+          <Text fontSize="4xl" fontFamily="Work sans">
+            Chat-iFy
+          </Text>
+        </Box>
+        <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+          <Tabs isFitted variant="soft-rounded">
+            <TabList mb="1em">
+              <Tab>Login</Tab>
+              <Tab>Sign Up</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <Login />
+              </TabPanel>
+              <TabPanel>
+                <Signup />
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+        </Box>
+      </Container>
+    </>
   );
 }
 
